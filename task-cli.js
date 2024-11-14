@@ -3,6 +3,7 @@ if (!fs.existsSync("./task.json")) {
   fs.writeFileSync("./task.json", "[]");
 }
 
+// Tasks class
 class Task {
   static id = getLastTaskId() + 1;
   constructor(description, status, createdAt, updatedAt) {
